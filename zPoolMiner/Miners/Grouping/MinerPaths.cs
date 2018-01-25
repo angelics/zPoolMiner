@@ -326,13 +326,15 @@ namespace zPoolMiner.Miners.Grouping
                     return Data.ccminer_xevan;
                 }
                 if (AlgorithmType.X17 == algorithmType
-                     || AlgorithmType.Blake256r8 == algorithmType
+                    //ccminer_alexis78 better
+                     //|| AlgorithmType.Blake256r8 == algorithmType
                      || AlgorithmType.X11evo == algorithmType
                      || AlgorithmType.X11Gost == algorithmType)
                 {
                     return Data.ccminer_palgin;
                 }
-                if (AlgorithmType.Hsr == algorithmType)
+                if (AlgorithmType.Hsr == algorithmType
+                   || AlgorithmType.Nist5 == algorithmType)
                 {
                     return Data.ccminer_alexis_hsr;
                 }
@@ -349,7 +351,8 @@ namespace zPoolMiner.Miners.Grouping
                     || AlgorithmType.Lbry == algorithmType
                     || AlgorithmType.Lyra2REv2 == algorithmType
                     || AlgorithmType.Blake2s == algorithmType
-                    || AlgorithmType.Nist5 == algorithmType
+                    //ccminer_alexis_hsr better
+                    //|| AlgorithmType.Nist5 == algorithmType
                     || AlgorithmType.Skein == algorithmType
                     || AlgorithmType.Keccak == algorithmType
                     || AlgorithmType.Polytimos == algorithmType
@@ -400,14 +403,20 @@ namespace zPoolMiner.Miners.Grouping
                 {
                     return Data.ccminer_xevan;
                 }
-                if (AlgorithmType.X17 == algorithmType
-                     || AlgorithmType.Blake256r8 == algorithmType
-                     || AlgorithmType.X11evo == algorithmType
-                    || AlgorithmType.X11Gost == algorithmType)
+                if (//ccminer_alexis_hsr better
+                    //AlgorithmType.X17 == algorithmType
+                    //ccminer_alexis78 better
+                     //|| AlgorithmType.Blake256r8 == algorithmType
+                      AlgorithmType.X11evo == algorithmType)
+                    //|| AlgorithmType.X11Gost == algorithmType)
                 {
                     return Data.ccminer_palgin;
                 }
-                if (AlgorithmType.Hsr == algorithmType)
+                if (AlgorithmType.Hsr == algorithmType
+                    //-i 21
+                    || AlgorithmType.X11Gost == algorithmType
+                    || AlgorithmType.Nist5 == algorithmType
+                    || AlgorithmType.Timetravel == algorithmType)
                 {
                     return Data.ccminer_alexis_hsr;
                 }
@@ -418,16 +427,19 @@ namespace zPoolMiner.Miners.Grouping
                 {
                     return Data.ccminer_tpruvot2;
                 }
-                if (AlgorithmType.X17 == algorithmType
+                if (//-i 21
+                    AlgorithmType.X17 == algorithmType
                     //zpool removed veltor
                     //|| AlgorithmType.Veltor == algorithmType
                     || AlgorithmType.Lbry == algorithmType
                     || AlgorithmType.Lyra2REv2 == algorithmType
                     || AlgorithmType.Blake2s == algorithmType
-                    || AlgorithmType.Nist5 == algorithmType
+                    //ccminer_alexis_hsr better
+                    //|| AlgorithmType.Nist5 == algorithmType
                     || AlgorithmType.Skein == algorithmType
                     || AlgorithmType.Keccak == algorithmType
                     || AlgorithmType.Polytimos == algorithmType
+                    //-i 21
                     || AlgorithmType.C11 == algorithmType)
                 {
                     return Data.ccminer_polytimos;
@@ -436,9 +448,10 @@ namespace zPoolMiner.Miners.Grouping
                 {
                     return Data.ccminer_22;
                 }
-                if (AlgorithmType.Hsr == algorithmType
-                    || AlgorithmType.Blake256r8 == algorithmType
-                    || AlgorithmType.X11Gost == algorithmType)
+                if (//ccminer_alexis_hsr better
+                    //AlgorithmType.Hsr == algorithmType
+                    AlgorithmType.Blake256r8 == algorithmType)
+                    //|| AlgorithmType.X11Gost == algorithmType)
                 {
                     return Data.ccminer_alexis78;
                 }
